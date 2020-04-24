@@ -31,15 +31,16 @@
 # print(type(5 % 2))
 
 
-selfish = "01234567"
+# selfish = "01234567"
 
-# string slicing
-# [start:stop:stepover]
-# negative index means to start from the end
-print(selfish[3:6:2])
+# # string slicing
+# # [start:stop:stepover]
+# # negative index means to start from the end
+# print(selfish[3:6:2])
 
-#reverse of the String
-print(selfish[::-1])
+# #reverse of the String
+# print(selfish[::-1])
 
 #immutability - cannot be changes
 # the values of string cannot be changed (as individual values) - only if you reassign the whole string it is possible to do
+
