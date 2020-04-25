@@ -10,7 +10,7 @@ class Person:
         self.adress = adress
         self.telephone = telephone
         self.email = email
-        today = date.today()
+        today = date.today() # question 3
         self.age = today.year - self.birthdate.year - ((today.month, today.day) < (self.birthdate.month,
                                                                                    self.birthdate.day))
 
@@ -43,6 +43,7 @@ class Person:
         except ValueError:
             print("פורמט לא תואם, נסה שוב")
 
+# question 3 - the ability to update age after creation
     def calculate_age(self):
         today = date.today()
         self.age = today.year - self.birthdate.year - ((today.month, today.day) < (self.birthdate.month,
@@ -99,6 +100,7 @@ lecturer1 = Lecturer("prof", 'fessor', '1970,7,5', 'ramat hasharon', '08-6880255
                      , '200', ['python'])
 
 
+# question 2
 def check_who_teaches(teacher: Lecturer, s: Student):
     try:
         for i in teacher.teaches_courses:
@@ -114,4 +116,5 @@ def check_who_teaches(teacher: Lecturer, s: Student):
 
 check_who_teaches(lecturer1, student1)
 
+# question 3
 print(student1.age)
